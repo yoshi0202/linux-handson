@@ -8,7 +8,8 @@
       require('DBSettingConstructor.php');
       require('PDOWrapper.php');
       require('CreateHtml.php');
-      $db_settings = new DBSettingConstructor();
+      # wazato typo
+      $db_settings = new DBSettingConstructor()
       $pdo_wrapper = new PDOWrapper($db_settings);
       $sql_result = $pdo_wrapper->execSql("SELECT * FROM memo;");
       $create_html = new CreateHtml();
